@@ -1,10 +1,5 @@
 { modulesPath, config, lib, pkgs, ... }: {
-  imports = [
-    (modulesPath + "/installer/scan/not-detected.nix")
-    (modulesPath + "/profiles/qemu-guest.nix")
-    ./hardware
-    ./user
-  ];
+  imports = [ ./hardware ./user ./display-server ];
 
   services.openssh.enable = true;
 
