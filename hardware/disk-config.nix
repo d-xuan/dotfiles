@@ -36,4 +36,10 @@
       };
     };
   };
+
+  boot.loader.systemd-boot.enable = true;
+  fileSystems."/boot" = {
+    options = [ "uid=0" "gid=0" "fmask=0077" "dmask=0077" ];
+  };
+
 }
