@@ -1,7 +1,9 @@
 { config, lib, pkgs, ... }:
 
 {
-  programs.sway.enable = true;
-  xdg.portal.wlr.enable = true;
-  environment.systemPackages = [ pkgs.foot ];
+  services.xserver = {
+    enable = true;
+    windowManager.i3.enable = true;
+  };
+
 }

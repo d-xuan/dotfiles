@@ -1,1 +1,1 @@
-{ imports = [ ./disk-config.nix ./hardware-configuration.nix ]; }
+{ imports = [ ./disk-config.nix ./hardware-configuration.nix ./keyboard.nix ]; }
