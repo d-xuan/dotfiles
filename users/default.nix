@@ -1,5 +1,5 @@
 { config, lib, ... }: {
-  imports = [ ./root.nix ./user.nix ];
+  imports = [ ./root ./wednesday ];
 
   users.mutableUsers = false;
 }

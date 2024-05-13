@@ -1,4 +1,4 @@
-{ modulesPath, config, lib, pkgs, ... }: {
+{ inputs, lib, pkgs, ... }: {
   imports = [ ./hardware ./users ./display-server ];
 
   services.openssh.enable = true;
