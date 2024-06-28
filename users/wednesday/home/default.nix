@@ -1,6 +1,7 @@
 { config, lib, pkgs, inputs, globals, ... }:
 
 {
+  imports = [ ./emacs ];
 
   home-manager.users.${globals.username} = {
     home.username = globals.username;
