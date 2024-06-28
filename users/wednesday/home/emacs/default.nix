@@ -1,5 +1,7 @@
 { config, inputs, globals, lib, pkgs, ... }: {
 
+  imports = [ ./doom.nix ];
+
   nixpkgs.overlays = [
     (final: prev: {
       emacs-wednesday = prev.emacs.overrideAttrs (oldAttrs: rec {
@@ -19,12 +21,10 @@
         buildInputs = oldAttrs.buildInputs
           ++ (with final; [ jansson tree-sitter ]);
       });
-
     })
   ];
 
   home-manager.users.${globals.username} = {
-
     programs.emacs = {
       enable = true;
       package = pkgs.emacs-wednesday;
