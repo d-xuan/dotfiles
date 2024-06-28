@@ -2,7 +2,7 @@
   disko.devices = {
     disk = {
       vdb = {
-        device = "/dev/disk/by-id/ata-KINGSTON_SUV400S47120G_50026B776A012FCE";
+        device = "/dev/disk/by-id/ata-KINGSTON_SUV400S37120G_50026B776A012FCE";
         type = "disk";
         content = {
           type = "gpt";
