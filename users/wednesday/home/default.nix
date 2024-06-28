@@ -10,5 +10,6 @@
     home.stateVersion = "23.11";
     programs.home-manager.enable = true;
     programs.zsh.enable = true;
+    xdg.enable = true;
   };
 }
